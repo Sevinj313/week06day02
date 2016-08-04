@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	img{
+		width: 200px;
+		height:200px;
+		margin-left: 10px;
+	}
+	.btn{
+		/*border: 1px solid blue;*/
+		background: lightblue;
+		color: white;
+		width: 100px;
+		height: 40px;
+		border: 20px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+
+
+	</style>
+	<button onclick="sekil()" class="btn">Button</button>
+</head>
+<body>
+	<script>
+	var newA = ["miki1.jpg", "miki2.jpg","miki3.jpg","miki4.jpg","miki5.jpg"]
+	var i = 0;
+	function sekil () {
+		if (i == 5 ) { 
+
+			i =0;
+
+
+	}
+			var Myimg = document.createElement('img');
+			Myimg.setAttribute("src", "" + newA[i] +"");
+			document.body.appendChild(Myimg);
+			i++;
+				
+			}
+	</script>
+</body>
+</html>
